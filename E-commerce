@@ -1,0 +1,37 @@
+public class ECommercePlatform {
+public static void main(String[] args) {
+// Sample usage:
+double originalTotal = 100.0;
+
+32
+
+32
+
+boolean isPromotionActive = true;
+// Calculate the discounted total
+double discountedTotal = calculateDiscount(originalTotal,
+
+isPromotionActive);
+
+// Display the results
+System.out.println(&quot;Original Total: $&quot; + originalTotal);
+System.out.println(&quot;Is Promotion Active: &quot; +
+
+isPromotionActive);
+
+System.out.println(&quot;Discounted Total: $&quot; +
+
+discountedTotal);
+}
+
+public static double calculateDiscount(double
+
+originalTotal, boolean isPromotionActive) {
+// Use the ternary operator to conditionally apply the discount
+
+double discountedTotal = isPromotionActive ?originalTotal
+
+* 0.90 : originalTotal;
+return discountedTotal;
+}
+}
